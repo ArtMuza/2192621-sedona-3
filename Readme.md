@@ -2,6 +2,7 @@
 
 * Студент: [Артур Музафаров](https://up.htmlacademy.ru/htmlcss-individual/3/user/2192621).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Седона 2026](https://artmuza.github.io/2192621-sedona-3/).
 
 ---
 
