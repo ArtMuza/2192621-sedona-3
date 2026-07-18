@@ -1,0 +1,364 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+.page-container {
+  background-color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list,
+.navigation-user,
+.advantages-list,
+.services-list,
+.social-media-list,
+.breadcrumbs-list,
+.infrastructure-list,
+.apartment-list,
+.catalog-view-list,
+.catalog-list,
+.pagination-list {
+  list-style: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  font-family: inherit;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navigation-user-button {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.welcome-hero {
+  background-image: url("../images/index-background.jpg");
+}
+
+.newsletter-index {
+  background-image: url("../images/subscribe.jpg");
+}
+
+.catalog-filter {
+  background-image: url("../images/filter.jpg");
+}
+
+.welcome-hero,
+.newsletter-index,
+.catalog-filter {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #7DB54F;
+}
+
+.advantages-header,
+.services-header,
+.search-title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-description,
+.services-description,
+.search-text {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: inherit;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title,
+.services-title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages-text,
+.services-text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: inherit;
+}
+
+.advantages-container {
+  background-color: #82B3D3;
+}
+
+.advantages-container .advantages-title,
+.advantages-container .advantages-text {
+  color: white;
+}
+
+.services-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:nth-child(2) {
+  background-color: #FFFFFF;
+}
+
+.search-button {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #756157;
+}
+
+.newsletter-form {
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newsletter-text {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.newsletter-field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #000000;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 700;
+  text-align: center;
+  background-color: #82B3D3;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.infrastructure-title,
+.apartment-title,
+.price-title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.infrastructure-item,
+.apartment-item {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.button-apply,
+.button-reset {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.button-apply {
+  background-color: #82B3D3;
+}
+
+.catalog-result {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-item-title {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-prices,
+.catalog-item-description,
+.catalog-item-price {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: inherit;
+}
+
+.catalog-item-link,
+.catalog-item-button {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+}
+
+.catalog-item-button-added {
+  background-color: #7DB54F;
+}
+
+.catalog-item-link {
+  background-color: #756157;
+}
+
+.catalog-item-rating {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.pagination-list {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+}
+
+.pagination-link-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.newsletter-title-catalog {
+  color: #000000;
+}
+
+.newsletter-text-catalog {
+  color: #333333;
+}
