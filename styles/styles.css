@@ -940,8 +940,12 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
+
   align-items: center;
+
   gap: 16px;
+
+  cursor: pointer;
 }
 
 .filter-input {
@@ -1009,11 +1013,11 @@ body {
   background-color: var(--color-neutral-000-transparent-03);
 }
 
-.filter-range-field {
+.range-field {
   display: flex;
 }
 
-.filter-range-input {
+.range-input {
   width: 145px;
 
   padding: 12px 20px;
@@ -1024,18 +1028,29 @@ body {
   line-height: var(--line-height-l);
   font-weight: var(--font-weight-bold);
 
+  background-color: var(--color-neutral-100);
   color: var(--color-neutral-900);
+
+  cursor: pointer;
 }
 
-.filter-range-input-from {
+.range-input:hover {
+  background-color: var(--color-neutral-150);
+}
+
+.range-input:focus-visible {
+  background-color: var(--color-neutral-150);
+}
+
+.range-input-from {
   border-radius: 4px 0 0 4px;
 }
 
-.filter-range-input-to {
+.range-input-to {
   border-radius: 0 4px 4px 0;
 }
 
-.filter-range-label {
+.range-label {
   font-size: var(--font-size-s);
   line-height: var(--line-height-l);
 
@@ -1158,6 +1173,10 @@ body {
 
   border: 2px solid var(--color-neutral-200);
   border-radius: 4px;
+}
+
+.view-link.current {
+  border-color: var(--color-neutral-900);
 }
 
 .view-link:hover {
