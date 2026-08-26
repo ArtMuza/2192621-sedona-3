@@ -94,15 +94,17 @@
             <fieldset class="filter-group">
               <legend class="filter-group-title">Стоимость, ₽:</legend>
               <div class="range-field">
-                <label class="visually-hidden" for="from">От</label>
-                <input class="range-input range-input-from" type="number" name="price-from" value="0" id="from">
-                <!-- <span class="range-label">От</span> -->
-                <label class="visually-hidden" for="to">До</label>
-                <input class="range-input range-input-to" type="number" name="price-to" value="9000" id="to">
-                <!-- <span class="range-label">До</span> -->
+                <div class="range-input-wrapper">
+                  <input class="range-input range-input-from" type="number" name="price-from" value="0" id="from">
+                  <label class="range-label" for="from">От</label>
+                </div>
+                <div class="range-input-wrapper">
+                  <input class="range-input range-input-to" type="number" name="price-to" value="9000" id="to">
+                  <label class="range-label" for="to">До</label>
+                </div>
               </div>
               <div class="range-scale">
-                <div class="range-bar">
+                <div class="range-bar" style="width: 226px;">
                   <button class="range-toggle toggle-min">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
@@ -119,28 +121,30 @@
           </form>
         </div>
         <section class="catalog">
-          <h2 class="catalog-title">Найдено гостиниц: <span class="count">38</span></h2>
-          <select class="sort-select" name="sort" id="sort" aria-label="Сортировка списка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <ul class="view-switcher">
-            <li class="view-option">
-              <a class="view-link view-link-tile current" aria-current="page" href="catalog.html?view=tile">
-                <span class="visually-hidden">Отображать сеткой</span>
-              </a>
-            </li>
-            <li class="view-option">
-              <a class="view-link view-link-card" href="catalog.html?view=card">
-                <span class="visually-hidden">Отображать плиткой</span>
-              </a>
-            </li>
-            <li class="view-option">
-              <a class="view-link view-link-list" href="catalog.html?view=list">
-                <span class="visually-hidden">Отображать списком</span>
-              </a>
-            </li>
-          </ul>
+          <header class="catalog-header">
+            <h2 class="catalog-title">Найдено гостиниц: <span class="count">38</span></h2>
+            <select class="sort-select" name="sort" id="sort" aria-label="Сортировка списка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="view-switcher">
+              <li class="view-option">
+                <a class="view-link view-link-tile current" aria-current="page" href="catalog.html?view=tile">
+                  <span class="visually-hidden">Отображать сеткой</span>
+                </a>
+              </li>
+              <li class="view-option">
+                <a class="view-link view-link-card" href="catalog.html?view=card">
+                  <span class="visually-hidden">Отображать плиткой</span>
+                </a>
+              </li>
+              <li class="view-option">
+                <a class="view-link view-link-list" href="catalog.html?view=list">
+                  <span class="visually-hidden">Отображать списком</span>
+                </a>
+              </li>
+            </ul>
+          </header>
           <ul class="card-list">
             <li class="card">
               <a class="card-title-link" href="#" tabindex="-1">
