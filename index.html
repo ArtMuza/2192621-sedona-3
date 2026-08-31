@@ -130,7 +130,7 @@
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="e-mail">Укажите ваш e-mail</label>
-            <input class="newsletter-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
+            <input class="input newsletter-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
             <label class="newsletter-label" for="e-mail">Ваш e-mail</label>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
@@ -161,6 +161,64 @@
           <span class="visually-hidden">Разработчик сайта — HTML Academy</span>
         </a>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close ">
+      <div class="modal">
+        <section class="modal-content">
+          <h2 class="section-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-item">
+              <label class="form-label" for="check-in-date">Дата заезда:</label>
+              <input id="check-in-date" class="input date-input" type="text" name="check-in-date" value="27 апреля 2020"
+                placeholder="Укажите дату" required>
+              <p class="form-message form-message-error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="field-item">
+              <label class="form-label" for="check-out-date">Дата выезда:</label>
+              <input id="check-out-date" class="input date-input" type="text" name="check-out-date"
+                value="1 сентября 2023" placeholder="Укажите дату" required>
+              <p class="form-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="field-item">
+              <label class="form-label" for="adult">Взрослые:</label>
+              <div class="counter">
+                <button class="counter-button counter-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input id="adult" class="input modal-number" type="number" name="adult" value="2">
+                <button class="counter-button counter-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="tooltip-wrapper">
+                <label class="form-label" for="children">Дети:</label>
+                <button class="info-button" type="button" aria-labelledby="tooltip-label-date">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+                <div class="tooltip" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут
+                  с&nbsp;вами, возраст которых от&nbsp;6&nbsp;до&nbsp;18&nbsp;лет. Дети до&nbsp;6&nbsp;лет размещаются
+                  бесплатно.
+                </div>
+              </div>
+              <div class="counter">
+                <button class="counter-button counter-button-minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество</span>
+                </button>
+                <input id="children" class="input modal-number" type="number" name="children" value="2">
+                <button class="counter-button counter-button-plus" type="button">
+                  <span class="visually-hidden">Увеличить количество</span>
+                </button>
+              </div>
+            </div>
+            <button class="button modal-button" type="submit">Найти</button>
+          </form>
+        </section>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </div>
   </body>
 

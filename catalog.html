@@ -95,20 +95,20 @@
               <legend class="filter-group-title">Стоимость, ₽:</legend>
               <div class="range-field">
                 <div class="range-input-wrapper">
-                  <input class="range-input range-input-from" type="number" name="price-from" value="0" id="from">
+                  <input class="input range-input" type="number" name="price-from" value="0" id="from">
                   <label class="range-label" for="from">От</label>
                 </div>
                 <div class="range-input-wrapper">
-                  <input class="range-input range-input-to" type="number" name="price-to" value="9000" id="to">
+                  <input class="input range-input" type="number" name="price-to" value="9000" id="to">
                   <label class="range-label" for="to">До</label>
                 </div>
               </div>
               <div class="range-scale">
                 <div class="range-bar" style="width: 226px;">
-                  <button class="range-toggle toggle-min">
+                  <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену</span>
                   </button>
-                  <button class="range-toggle toggle-max">
+                  <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену</span>
                   </button>
                 </div>
@@ -247,7 +247,7 @@
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="e-mail">Укажите ваш e-mail</label>
-            <input class="newsletter-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
+            <input class="input newsletter-field" type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail" required>
             <label class="newsletter-label" for="e-mail">Ваш e-mail</label>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
