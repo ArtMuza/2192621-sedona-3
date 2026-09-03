@@ -1,20 +1,15 @@
 :root {
-  /* Color */
-  /* color-white */
   --color-white: #ffffff;
   --color-white-transparent-60: rgba(255, 255, 255, 0.6);
   --color-white-transparent-30: rgba(255, 255, 255, 0.3);
-  /* color-grey */
   --color-grey-lightest: #f2f2f2;
   --color-grey-lightest-transparent-80: rgba(242, 242, 242, 0.8);
   --color-grey-light: #e6e6e6;
   --color-grey: #e5e5e5;
   --color-grey-dark: #333333;
-  /* color-black */
   --color-black: #000000;
   --color-black-transparent-30: rgba(0, 0, 0, 0.3);
   --color-black-transparent-60: rgba(0, 0, 0, 0.6);
-  /* color-blue */
   --color-blue-light-transparent-12: rgba(131, 179, 211, 0.12);
   --color-blue-light-transparent-20: rgba(131, 179, 211, 0.2);
   --color-blue: #68a2ca;
@@ -22,26 +17,20 @@
   --color-blue-light: #83b3d3;
   --color-blue-medium: #82b3d3;
   --color-blue-dark: #3f5e72;
-  /* color-brown */
   --color-brown: #756157;
   --color-brown-transparent-30: rgba(117, 97, 87, 0.3);
   --color-brown-dark: #615048;
-  /* color-green */
   --color-green: #7db54f;
   --color-green-dark: #6c9e42;
-  /*color-red*/
   --color-red: #ff5757;
-  /*linear gradient*/
   --color-linear-gradient: linear-gradient(315deg in oklab,
       oklch(0.82 0.06 20),
       oklch(0.74 0.03 171) 33%,
       oklch(0.61 0.11 228) 66%,
       oklch(0.48 0.15 253));
 
-  /* Font-family*/
   --font-family: "PT Sans", sans-serif;
 
-  /* Font-size */
   --font-size-xxs: 10px;
   --font-size-xs: 16px;
   --font-size-s: 18px;
@@ -52,14 +41,12 @@
   --font-size-3xl: 40px;
   --font-size-4xl: 60px;
 
-  /* Line-height */
   --line-height-xs: 1;
   --line-height-s: 1.2;
   --line-height-m: 1.25;
   --line-height-l: 1.3;
   --line-height-xl: 1.8;
 
-  /* Font-weight */
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -192,13 +179,17 @@ body {
   color: var(--color-black);
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:not(.current):hover,
+.navigation-link:not(.current):focus {
   color: var(--color-brown);
 }
 
-.navigation-link:active {
+.navigation-link:not(.current):active {
   color: var(--color-brown-transparent-30);
+}
+
+.navigation-link.current {
+  cursor: default;
 }
 
 .navigation-link.current::after {
@@ -1045,12 +1036,16 @@ body {
   color: var(--color-white);
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link:not(.current):hover {
   color: var(--color-white-transparent-60);
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link:not(.current):active {
   color: var(--color-white-transparent-30);
+}
+
+.breadcrumbs-link.current {
+  cursor: default;
 }
 
 .link-home {
